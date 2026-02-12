@@ -175,6 +175,18 @@ body{
   pointer-events:none;
 }
 
+/* ✅ توهج خلف بطاقة الهيرو (إضافة) */
+.hero-card-main::after{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:linear-gradient(45deg, var(--accent2), var(--accent), var(--accent3));
+  filter:blur(40px);
+  opacity:.15;
+  z-index:-1;
+  pointer-events:none;
+}
+
 .hero-title{
   margin:0;
   font-size: clamp(42px, 6vw, 70px);
@@ -184,6 +196,23 @@ body{
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
+}
+
+/* ✅ حركة دخول الاسم (إضافة) */
+.hero-title{
+  animation: fadeUp .8s ease forwards;
+  opacity:0;
+}
+
+/* ✅ لمعة عند المرور (إضافة) */
+.hero-title:hover{
+  text-shadow:0 0 25px rgba(120,180,255,.35);
+  transition:.3s;
+}
+
+@keyframes fadeUp{
+  from{ transform:translateY(20px); opacity:0; }
+  to{ transform:translateY(0); opacity:1; }
 }
 
 .hero-role{
@@ -229,6 +258,12 @@ body{
   transition: transform .08s ease, box-shadow .2s ease, border-color .2s ease;
 }
 .btn:active{ transform: translateY(1px); }
+
+/* ✅ Hover احترافي للأزرار (إضافة) */
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
 
 .btn.primary{
   border-color: rgba(88,230,255,.28);
@@ -371,4 +406,7 @@ h2{ margin:0 0 14px; }
   .nav.show{ display:flex; }
   .nav a{ width:100%; }
 }
+
+
+
 
