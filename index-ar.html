@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- تعريف نوع الصفحة -->
-<html lang="en">
-<!-- الموقع باللغة الإنجليزية مثل الـCV -->
+<html lang="ar" dir="rtl">
+<!-- الموقع باللغة العربية (نسخة عربية منفصلة عشان ما نخرب الاسم بالترجمة التلقائية) -->
 
 <head>
   <meta charset="UTF-8">
@@ -10,11 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- يخلي الموقع متجاوب مع كل الشاشات -->
 
-  <title>Hour Alhejress | Portfolio</title>
+  <title>حور الهجرس | Portfolio</title>
   <!-- عنوان التبويب -->
 
   <link rel="stylesheet" href="styles.css">
-  <!-- ربط ملف التنسيق -->
+  <!-- ربط ملف التنسيق (نفس الملف عشان ما يصير شغل خربطي) -->
 </head>
 
 <body>
@@ -32,27 +32,27 @@
     <div class="container nav-wrap">
 
       <!-- الشعار في الهيدر (HA فقط) -->
-      <a class="brand" href="#home" aria-label="Go to home">
+      <a class="brand" href="#home" aria-label="الرجوع للبداية">
         <span class="brand-badge">HA</span>
       </a>
 
       <!-- زر القائمة للجوال -->
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="فتح/إغلاق القائمة">☰</button>
 
       <!-- روابط الأقسام -->
       <nav class="nav" id="navMenu">
-        <a href="#home">Home</a>
-        <a href="#summary">Summary</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#languages">Languages</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">الرئيسية</a>
+        <a href="#summary">الملخص</a>
+        <a href="#education">التعليم</a>
+        <a href="#skills">المهارات</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#languages">اللغات</a>
+        <a href="#cv">السيرة</a>
+        <a href="#contact">تواصل</a>
       </nav>
 
-      <!-- زر عربي (أضفته عشان يفتح النسخة العربية مباشرة بدون ترجمة تلقائية) -->
-      <a class="btn outline" href="index-ar.html" aria-label="Switch to Arabic">AR</a>
+      <!-- زر English (أضفته عشان يرجع للنسخة الإنجليزية بسهولة بدون ما نسوي ترجمة تلقائية) -->
+      <a class="btn outline" href="index.html" aria-label="Switch to English">EN</a>
 
     </div>
   </header>
@@ -67,20 +67,20 @@
       <section class="hero-card-main">
 
         <!-- عنوان صغير يعطي إحساس تقني -->
-        <p class="codehint">// HELLO, THIS IS MY TECH SPACE</p>
+        <p class="codehint">// أهلاً، هذه مساحتي التقنية</p>
 
-        <h1 class="hero-title">Hour Alhejress</h1>
+        <h1 class="hero-title">حور الهجرس</h1>
 
         <!-- الوظيفة الأساسية -->
-        <p class="hero-role">Computer Science Student</p>
+        <p class="hero-role">طالبة علوم حاسب</p>
 
         <!--  الجملة اللي  تحت الاسم ) -->
         <p class="hero-one-liner">
-           interested in problem-solving and clean software design.
+         مهتمة بحل المشكلات وبناء حلول برمجية واضحة ومنظمة. 
         </p>
 
         <p class="hero-desc">
-          Seeking a Summer Internship / Training opportunity to gain hands-on industry experience.
+          أسعى للحصول على تدريب صيفي / فرصة تدريب لاكتساب خبرة عملية في بيئة العمل.
         </p>
 
         <!-- أزرار -->
@@ -90,28 +90,28 @@
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M10 4H4v16h16V8h-8V4zM10 8h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            View Projects
+            عرض المشاريع
           </a>
 
           <!--  زر View CV في الهيرو  -->
-          <a class="btn outline" href="Hour_AlhejressCV.pdf" target="_blank" rel="noopener">
+          <a class="btn outline" href="Hour_Alhejress_CV_AR.pdf" target="_blank" rel="noopener">
             <!-- أيقونة PDF (SVG) -->
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               <path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
             </svg>
-            View CV
+            عرض السيرة
           </a>
 
           <!-- زر تحميل نسخة من الـCV كخيار إضافي  -->
-          <a class="btn soft" href="Hour_AlhejressCV.pdf" download>
+          <a class="btn soft" href="Hour_Alhejress_CV_AR.pdf" download>
             <!-- أيقونة Download (SVG) -->
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               <path d="M8 11l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
-            Download CV
+            تحميل السيرة
           </a>
 
           <!-- زر يفتح الإيميل مباشرة مثل GitHub -->
@@ -123,7 +123,7 @@
               <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
             </svg>
-            Email Me
+            تواصل معي
           </a>
         </div>
 
@@ -142,10 +142,10 @@
 
         <!-- معلومات سريعة -->
         <div class="card">
-          <p class="codehint">// Quick Info</p>
+          <p class="codehint">// معلومات سريعة</p>
 
           <div class="kv">
-            <span class="key">Email</span>
+            <span class="key">البريد</span>
             <span class="value">
               <!--  أيقونة Email جنب الرابط -->
               <a class="link"
@@ -161,7 +161,7 @@
           </div>
 
           <div class="kv">
-            <span class="key">Phone</span>
+            <span class="key">الهاتف</span>
             <span class="value">
               <a class="link" href="tel:0502429054">0502429054</a>
             </span>
@@ -182,22 +182,21 @@
           </div>
 
           <div class="kv">
-            <span class="key">Location</span>
-            <span class="value">Saudi Arabia</span>
+            <span class="key">الموقع</span>
+            <span class="value">المملكة العربية السعودية</span>
           </div>
 
           <div class="kv">
-            <span class="key">Graduation</span>
+            <span class="key">التخرج</span>
             <span class="value">2027</span>
           </div>
         </div>
 
         <!-- كارد صغير “ستايل” -->
         <div class="card accent-card">
-          <p class="codehint">// CURRENT FOCUS</p>
-          <h3>Learning & Building</h3>
+          <p class="codehint">// التركيز الحالي</p>
           <p class="muted">
-            I enjoy building clean interfaces and improving problem-solving through projects.
+     أطور مهاراتي من خلال مشاريع عملية تركز على التصميم النظيف والمنطق البرمجي.
           </p>
 
           <a class="btn primary"
@@ -208,7 +207,7 @@
               <path d="M12 2C6.48 2 2 6.6 2 12.28c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.48v-1.7c-2.78.62-3.36-1.1-3.36-1.1-.46-1.2-1.12-1.52-1.12-1.52-.92-.65.07-.64.07-.64 1.02.07 1.56 1.08 1.56 1.08.9 1.6 2.37 1.14 2.95.87.09-.67.35-1.14.64-1.4-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.06 1.03-2.78-.1-.26-.45-1.33.1-2.76 0 0 .84-.27 2.75 1.06A9.2 9.2 0 0 1 12 6.9c.85 0 1.7.12 2.5.35 1.9-1.33 2.75-1.06 2.75-1.06.55 1.43.2 2.5.1 2.76.64.72 1.03 1.65 1.03 2.78 0 3.97-2.35 4.85-4.58 5.1.36.33.69.98.69 1.98v2.94c0 .26.18.58.69.48A10.3 10.3 0 0 0 22 12.28C22 6.6 17.52 2 12 2z"
                     fill="currentColor"/>
             </svg>
-            Visit My GitHub
+            زيارة GitHub
           </a>
         </div>
 
@@ -222,14 +221,15 @@
   <!-- ========================= -->
   <section id="summary" class="section">
     <div class="container">
-      <p class="codehint">// SUMMARY</p>
-      <h2>Summary</h2>
+     <!-- <p class="codehint">// الملخص</p> -->
+      <h2>الملخص</h2>
 
       <div class="card">
         <p>
-          Computer Science student at Qassim University (Expected 2027) 
-with strong foundations in programming, data structures, and software engineering.
-Experienced in academic projects using Java, Python, C++, SQL, and basic machine learning techniques.
+            طالبة علوم حاسب في جامعة القصيم، متوقع تخرجي عام 2027
+، أمتلك أساسًا قويًا في البرمجة، وهياكل البيانات، والخوارزميات، وهندسة البرمجيات.
+ لدي خبرة في تنفيذ مشاريع أكاديمية باستخدام
+Java و Python و C++ وقواعد البيانات، بالإضافة إلى أساسيات Machine Learning
         </p>
       </div>
     </div>
@@ -240,12 +240,12 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
   <!-- ========================= -->
   <section id="education" class="section">
     <div class="container">
-      <p class="codehint">// EDUCATION</p>
-      <h2>Education</h2>
+    <!--  <p class="codehint">// التعليم</p> -->
+      <h2>التعليم</h2>
 
       <div class="card">
-        <h3>Bachelor of Computer Science</h3>
-        <p class="muted">Qassim University — Expected Graduation: 2027</p>
+        <h3>بكالوريوس علوم الحاسب</h3>
+        <p class="muted">جامعة القصيم — التخرج المتوقع: 2027</p>
       </div>
     </div>
   </section>
@@ -255,22 +255,22 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
   <!-- ========================= -->
   <section id="skills" class="section">
     <div class="container">
-      <p class="codehint">// TECHNICAL SKILLS</p>
-      <h2>Technical Skills</h2>
+     <!-- <p class="codehint">// المهارات التقنية</p> -->
+      <h2>المهارات التقنية</h2>
 
       <div class="grid-2">
 
         <div class="card">
-          <h3>Programming & Databases</h3>
+          <h3>البرمجة وقواعد البيانات</h3>
 
-          <p class="muted-title">Programming Languages</p>
+          <p class="muted-title">لغات البرمجة</p>
           <div class="chips">
             <span class="chip">Java</span>
             <span class="chip">Python</span>
             <span class="chip">C++</span>
           </div>
 
-          <p class="muted-title">Databases</p>
+          <p class="muted-title">قواعد البيانات</p>
           <div class="chips">
             <span class="chip">SQL</span>
             <span class="chip">SQLite</span>
@@ -278,7 +278,7 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
         </div>
 
         <div class="card">
-           <h3>Core Areas & Technologies</h3>
+             <h3>المجالات والتقنيات</h3>
 
           <p class="muted-title">Machine Learning</p>
           <div class="chips">
@@ -322,15 +322,15 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
   <!-- ========================= -->
   <section id="projects" class="section">
     <div class="container">
-      <p class="codehint">// PROJECTS</p>
-      <h2>Projects</h2>
+    <!--  <p class="codehint">// المشاريع</p>-->
+      <h2>المشاريع</h2>
 
       <div class="cards">
-        <a class="card" href="https://github.com/Hour-A11/Aircraft-schedule-system" target="_blank" rel="noopener noreferrer"><h3>Aircraft Runway Scheduling System</h3></a>
-        <a class="card" href="https://github.com/Hour-A11/Heart-Disease-Prediction" target="_blank" rel="noopener noreferrer"><h3>Heart Disease Prediction</h3></a>
-        <a class="card" href="https://github.com/Hour-A11/Hospital-Management-System" target="_blank" rel="noopener noreferrer"><h3>Hospital Management System</h3></a>
-        <a class="card" href="https://github.com/Hour-A11/Project-Saudi-Green-" target="_blank" rel="noopener noreferrer"><h3>Saudi Green Project (SRS)</h3></a>
-        <a class="card" href="https://github.com/Hour-A11/To-Do-List-Application" target="_blank" rel="noopener noreferrer"><h3>To-Do List (Linked List)</h3></a>
+        <a class="card" href="https://github.com/Hour-A11/Aircraft-schedule-system" target="_blank" rel="noopener noreferrer"><h3>نظام جدولة مدرج الطائرات</h3></a>
+        <a class="card" href="https://github.com/Hour-A11/Heart-Disease-Prediction" target="_blank" rel="noopener noreferrer"><h3>تنبؤ أمراض القلب</h3></a>
+        <a class="card" href="https://github.com/Hour-A11/Hospital-Management-System" target="_blank" rel="noopener noreferrer"><h3>نظام إدارة المستشفى</h3></a>
+        <a class="card" href="https://github.com/Hour-A11/Project-Saudi-Green-" target="_blank" rel="noopener noreferrer"><h3>مشروع السعودية الخضراء (SRS)</h3></a>
+        <a class="card" href="https://github.com/Hour-A11/To-Do-List-Application" target="_blank" rel="noopener noreferrer"><h3>قائمة المهام (Linked List)</h3></a>
       </div>
     </div>
   </section>
@@ -340,13 +340,13 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
   <!-- ========================= -->
   <section id="languages" class="section">
     <div class="container">
-      <p class="codehint">// LANGUAGES</p>
-      <h2>Languages</h2>
+    <!--  <p class="codehint">// اللغات</p>-->
+      <h2>اللغات</h2>
 
       <div class="cards">
-        <div class="card"><h3>Arabic</h3><p>Native</p></div>
-        <div class="card"><h3>English</h3><p>Fluent</p></div>
-        <div class="card"><h3>Turkish</h3><p>Advanced</p></div>
+        <div class="card"><h3>العربية</h3><p>اللغة الأم</p></div>
+        <div class="card"><h3>الإنجليزية</h3><p>طلاقة</p></div>
+        <div class="card"><h3>التركية</h3><p>متقدم</p></div>
       </div>
     </div>
   </section>
@@ -356,32 +356,32 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
   <!-- ========================= -->
   <section id="cv" class="section">
     <div class="container">
-      <p class="codehint">// CV</p>
-      <h2>Curriculum Vitae</h2>
+   <!--   <p class="codehint">// السيرة الذاتية</p>-->
+      <h2>السيرة الذاتية</h2>
 
       <div class="card contact-card">
         <p class="muted">
-          You can view my CV online or download a copy.
+          يمكنك عرض السيرة الذاتية أو تحميل نسخة منها.
         </p>
 
         <div class="contact-actions">
           <!-- View هو الأساسي -->
-          <a class="btn primary" href="Hour_AlhejressCV.pdf" target="_blank" rel="noopener">
+          <a class="btn primary" href="Hour_Alhejress_CV_AR.pdf" target="_blank" rel="noopener">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               <path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
             </svg>
-            View CV
+            عرض السيرة
           </a>
 
           <!-- Download إضافي -->
-          <a class="btn outline" href="Hour_AlhejressCV.pdf" download>
+          <a class="btn outline" href="Hour_Alhejress_CV_AR.pdf" download>
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               <path d="M8 11l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
-            Download CV
+            تحميل السيرة
           </a>
         </div>
       </div>
@@ -393,12 +393,12 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
   <!-- ========================= -->
   <section id="contact" class="section">
     <div class="container">
-      <p class="codehint">// CONTACT</p>
-      <h2>Contact Me</h2>
+      <p class="codehint">// التواصل</p>
+      <h2>تواصل معي</h2>
 
       <div class="card contact-card">
         <p class="muted">
-          Click to contact me directly:
+          اضغط للتواصل معي مباشرة:
         </p>
 
         <div class="contact-actions">
@@ -409,7 +409,7 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
               <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
             </svg>
-            Open Email
+            فتح البريد
           </a>
 
           <a class="btn outline"
@@ -419,16 +419,17 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
               <path d="M12 2C6.48 2 2 6.6 2 12.28c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.48v-1.7c-2.78.62-3.36-1.1-3.36-1.1-.46-1.2-1.12-1.52-1.12-1.52-.92-.65.07-.64.07-.64 1.02.07 1.56 1.08 1.56 1.08.9 1.6 2.37 1.14 2.95.87.09-.67.35-1.14.64-1.4-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.06 1.03-2.78-.1-.26-.45-1.33.1-2.76 0 0 .84-.27 2.75 1.06A9.2 9.2 0 0 1 12 6.9c.85 0 1.7.12 2.5.35 1.9-1.33 2.75-1.06 2.75-1.06.55 1.43.2 2.5.1 2.76.64.72 1.03 1.65 1.03 2.78 0 3.97-2.35 4.85-4.58 5.1.36.33.69.98.69 1.98v2.94c0 .26.18.58.69.48A10.3 10.3 0 0 0 22 12.28C22 6.6 17.52 2 12 2z"
                     fill="currentColor"/>
             </svg>
-            Open GitHub
+            فتح GitHub
           </a>
-         <a class="btn outline"
+
+          <a class="btn outline"
              href="https://www.linkedin.com/in/hour-alhejress-2b2389350"
              target="_blank" rel="noopener">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 2C6.48 2 2 6.6 2 12.28c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.48v-1.7c-2.78.62-3.36-1.1-3.36-1.1-.46-1.2-1.12-1.52-1.12-1.52-.92-.65.07-.64.07-.64 1.02.07 1.56 1.08 1.56 1.08.9 1.6 2.37 1.14 2.95.87.09-.67.35-1.14.64-1.4-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.06 1.03-2.78-.1-.26-.45-1.33.1-2.76 0 0 .84-.27 2.75 1.06A9.2 9.2 0 0 1 12 6.9c.85 0 1.7.12 2.5.35 1.9-1.33 2.75-1.06 2.75-1.06.55 1.43.2 2.5.1 2.76.64.72 1.03 1.65 1.03 2.78 0 3.97-2.35 4.85-4.58 5.1.36.33.69.98.69 1.98v2.94c0 .26.18.58.69.48A10.3 10.3 0 0 0 22 12.28C22 6.6 17.52 2 12 2z"
                     fill="currentColor"/>
             </svg>
-            Open linkedin
+            فتح LinkedIn
           </a>
 
         </div>
@@ -441,7 +442,7 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
   <!-- ========================= -->
   <footer class="footer">
     <div class="container footer-inner">
-      © 2026 Hour Alhejress — Built with HTML, CSS & JavaScript
+© 2026 حور الهجرس — تم تطويره بـ HTML وCSS وJavaScript
     </div>
   </footer>
 

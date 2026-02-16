@@ -64,7 +64,7 @@ body{
 }
 
 /* =========================
-   ✅ أيقونات SVG
+    أيقونات SVG
    نخليها صغيرة ومرتبة داخل الأزرار والروابط
    ========================= */
 .icon{
@@ -97,17 +97,18 @@ body{
   color:var(--text);
 }
 
+/* =========================
+   الشعار (HA) بشكل نظيف بدون صندوق
+   عشان ما يشبه الأزرار ويصير شكله احترافي أكثر
+   ========================= */
 .brand-badge{
-  width:46px;
-  height:46px;
-  border-radius:16px;
-  display:grid;
-  place-items:center;
-  border:1px solid rgba(88,230,255,.30);
-  background: linear-gradient(135deg, rgba(155,140,255,.14), rgba(88,230,255,.10));
-  box-shadow: 0 0 0 1px rgba(255,255,255,.05) inset, var(--shadow);
-  font-weight:900;
-  letter-spacing:.6px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* روابط التنقل */
@@ -175,7 +176,7 @@ body{
   pointer-events:none;
 }
 
-/* ✅ توهج خلف بطاقة الهيرو (إضافة) */
+/*  توهج خلف بطاقة الهيرو (إضافة) */
 .hero-card-main::after{
   content:"";
   position:absolute;
@@ -198,13 +199,13 @@ body{
   color:transparent;
 }
 
-/* ✅ حركة دخول الاسم (إضافة) */
+/*  حركة دخول الاسم (إضافة) */
 .hero-title{
   animation: fadeUp .8s ease forwards;
   opacity:0;
 }
 
-/* ✅ لمعة عند المرور (إضافة) */
+/*  لمعة عند المرور (إضافة) */
 .hero-title:hover{
   text-shadow:0 0 25px rgba(120,180,255,.35);
   transition:.3s;
@@ -221,7 +222,7 @@ body{
   color: rgba(238,240,255,.92);
 }
 
-/* ✅ الجملة تحت الاسم (هوية شخصية) */
+/*  الجملة تحت الاسم (هوية شخصية) */
 .hero-one-liner{
   margin: 0 0 14px;
   color: rgba(238,240,255,.78);
@@ -259,7 +260,7 @@ body{
 }
 .btn:active{ transform: translateY(1px); }
 
-/* ✅ Hover احترافي للأزرار (إضافة) */
+/*  Hover احترافي للأزرار (إضافة) */
 .btn:hover{
   transform:translateY(-2px);
   box-shadow:0 8px 25px rgba(0,0,0,.25);
@@ -405,6 +406,46 @@ h2{ margin:0 0 14px; }
 
   .nav.show{ display:flex; }
   .nav a{ width:100%; }
+}
+
+/* =========================
+   دعم النسخة العربية فقط (إضافة)
+   أضفته عشان صفحة index-ar.html تكون RTL ومحاذاة النص تكون طبيعية
+   ومهم خصوصًا لقائمة الجوال لأن عندك right:0 في .nav على الموبايل
+   ========================= */
+
+/* اتجاه عربي + محاذاة */
+html[lang="ar"] body{
+  direction: rtl;
+  text-align: right;
+}
+
+/* نخلي قائمة التنقل بالجوال تطلع من اليسار بدل اليمين في النسخة العربية فقط */
+html[lang="ar"] .nav{
+  right: auto;
+  left: 0;
+}
+
+/* =========================
+   تحسين تباعد مجموعات المهارات + توضيح عناوينها
+   عشان كل مجال يكون واضح ومفصول بصريًا
+   ========================= */
+#skills .card h3{
+  margin-bottom: 18px;
+  font-size: 18px;               /* أضفته عشان عنوان الكارد يكون أوضح */
+  font-weight: 700;              /* أضفته عشان التباين مع الـchips يزيد */
+  color: var(--text);            /* أضفته عشان ما يطلع باهت */
+}
+
+#skills .muted-title{
+  margin-top: 26px;
+  margin-bottom: 10px;           /* أضفته عشان ما يلتصق بالـchips */
+  font-weight: 600;              /* أضفته عشان يبان عنوان فرعي مو نص عادي */
+  color: rgba(238,240,255,.85);  /* أضفته عشان يفرق عن لون الـchips */
+}
+
+#skills .chips{
+  margin-bottom: 10px;
 }
 
 
