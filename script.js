@@ -1,6 +1,6 @@
 /* =========================
-   قائمة الجوال
-   لما نضغط ☰ تظهر/تختفي الروابط
+   mobile menu
+   clicking ☰ shows/hides the nav links
    ========================= */
 
 const navToggle = document.getElementById("navToggle");
@@ -11,8 +11,8 @@ navToggle.addEventListener("click", () => {
 });
 
 /* =========================
-   لما نضغط أي رابط بالجوال
-   نقفل القائمة عشان ما تظل مفتوحة
+   when any link is clicked on mobile
+   close the menu so it doesn't stay open
    ========================= */
 
 navMenu.querySelectorAll("a").forEach((a) => {

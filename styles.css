@@ -26,7 +26,7 @@ body{
     var(--bg);
 }
 
-/* لمعات الخلفية */
+/* background glow spots */
 .bg-glow{
   position:fixed;
   width:520px;
@@ -47,7 +47,7 @@ body{
   background: radial-gradient(circle, rgba(88,230,255,.34), transparent 60%);
 }
 
-/* حاوية */
+/* container */
 .container{
   width:min(1100px, calc(100% - 32px));
   margin:auto;
@@ -55,7 +55,7 @@ body{
   z-index:1;
 }
 
-/* نص كود */
+/* little code-style label */
 .codehint{
   color: rgba(238,240,255,.55);
   font-family: monospace;
@@ -64,8 +64,8 @@ body{
 }
 
 /* =========================
-    أيقونات SVG
-   نخليها صغيرة ومرتبة داخل الأزرار والروابط
+   SVG icons
+   keeping them small and tidy inside buttons and links
    ========================= */
 .icon{
   width:18px;
@@ -74,7 +74,7 @@ body{
   opacity:.95;
 }
 
-/* الهيدر */
+/* header */
 .topbar{
   position:sticky;
   top:0;
@@ -98,8 +98,8 @@ body{
 }
 
 /* =========================
-   الشعار (HA) بشكل نظيف بدون صندوق
-   عشان ما يشبه الأزرار ويصير شكله احترافي أكثر
+   logo (HA), clean with no box around it
+   so it doesn't look like a button and feels more professional
    ========================= */
 .brand-badge{
   font-size: 22px;
@@ -111,7 +111,7 @@ body{
   color: transparent;
 }
 
-/* روابط التنقل */
+/* nav links */
 .nav{
   display:flex;
   gap:6px;
@@ -132,7 +132,7 @@ body{
   background: rgba(155,140,255,.06);
 }
 
-/* زر القائمة */
+/* menu button */
 .nav-toggle{
   display:none;
   border:1px solid rgba(88,230,255,.25);
@@ -176,7 +176,7 @@ body{
   pointer-events:none;
 }
 
-/*  توهج خلف بطاقة الهيرو (إضافة) */
+/* glow behind the hero card (added) */
 .hero-card-main::after{
   content:"";
   position:absolute;
@@ -199,13 +199,13 @@ body{
   color:transparent;
 }
 
-/*  حركة دخول الاسم (إضافة) */
+/* entrance animation for the name (added) */
 .hero-title{
   animation: fadeUp .8s ease forwards;
   opacity:0;
 }
 
-/*  لمعة عند المرور (إضافة) */
+/* glow on hover (added) */
 .hero-title:hover{
   text-shadow:0 0 25px rgba(120,180,255,.35);
   transition:.3s;
@@ -222,7 +222,7 @@ body{
   color: rgba(238,240,255,.92);
 }
 
-/*  الجملة تحت الاسم (هوية شخصية) */
+/* the line under the name (personal touch) */
 .hero-one-liner{
   margin: 0 0 14px;
   color: rgba(238,240,255,.78);
@@ -260,7 +260,7 @@ body{
 }
 .btn:active{ transform: translateY(1px); }
 
-/*  Hover احترافي للأزرار (إضافة) */
+/* nicer hover effect for buttons (added) */
 .btn:hover{
   transform:translateY(-2px);
   box-shadow:0 8px 25px rgba(0,0,0,.25);
@@ -364,8 +364,8 @@ h2{ margin:0 0 14px; }
 }
 
 /* =========================
-   ✅ Footer
-   نخليه بسيط وأنيق ومكتمل
+   Footer
+   keeping it simple, clean and complete
    ========================= */
 .footer{
   border-top: 1px solid rgba(238,240,255,.10);
@@ -409,45 +409,42 @@ h2{ margin:0 0 14px; }
 }
 
 /* =========================
-   دعم النسخة العربية فقط (إضافة)
-   أضفته عشان صفحة index-ar.html تكون RTL ومحاذاة النص تكون طبيعية
-   ومهم خصوصًا لقائمة الجوال لأن عندك right:0 في .nav على الموبايل
+   Arabic version support only (added)
+   added this so index-ar.html renders RTL and text alignment feels natural
+   especially important for the mobile menu since .nav uses right:0 on mobile
    ========================= */
 
-/* اتجاه عربي + محاذاة */
+/* arabic direction + alignment */
 html[lang="ar"] body{
   direction: rtl;
   text-align: right;
 }
 
-/* نخلي قائمة التنقل بالجوال تطلع من اليسار بدل اليمين في النسخة العربية فقط */
+/* make the mobile nav open from the left instead of the right, arabic version only */
 html[lang="ar"] .nav{
   right: auto;
   left: 0;
 }
 
 /* =========================
-   تحسين تباعد مجموعات المهارات + توضيح عناوينها
-   عشان كل مجال يكون واضح ومفصول بصريًا
+   better spacing for the skill groups + clearer titles
+   so each area is easy to tell apart visually
    ========================= */
 #skills .card h3{
   margin-bottom: 18px;
-  font-size: 18px;               /* أضفته عشان عنوان الكارد يكون أوضح */
-  font-weight: 700;              /* أضفته عشان التباين مع الـchips يزيد */
-  color: var(--text);            /* أضفته عشان ما يطلع باهت */
+  font-size: 18px;               /* added so the card title stands out more */
+  font-weight: 700;              /* added for more contrast against the chips */
+  color: var(--text);            /* added so it does not look faded */
 }
 
 #skills .muted-title{
   margin-top: 26px;
-  margin-bottom: 10px;           /* أضفته عشان ما يلتصق بالـchips */
-  font-weight: 600;              /* أضفته عشان يبان عنوان فرعي مو نص عادي */
-  color: rgba(238,240,255,.85);  /* أضفته عشان يفرق عن لون الـchips */
+  margin-bottom: 10px;           /* added so it does not stick to the chips */
+  font-weight: 600;              /* added so it reads as a subheading, not plain text */
+  color: rgba(238,240,255,.85);  /* added so it stands out from the chip color */
 }
 
 #skills .chips{
   margin-bottom: 10px;
 }
-
-
-
 

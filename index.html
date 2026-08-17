@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<!-- تعريف نوع الصفحة -->
-<html lang="en">
-<!-- الموقع باللغة الإنجليزية مثل الـCV -->
+<html lang="en"> <!-- doctype -->
+
+<!-- English version of my CV/portfolio -->
 
 <head>
   <meta charset="UTF-8">
-  <!-- ترميز يدعم كل اللغات -->
+  <!-- utf-8, works with any language -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- يخلي الموقع متجاوب مع كل الشاشات -->
+  <!-- makes the page responsive on all screen sizes -->
 
   <title>Hour Alhejress | Portfolio</title>
-  <!-- عنوان التبويب -->
+  <!-- browser tab title -->
 
   <link rel="stylesheet" href="styles.css">
-  <!-- ربط ملف التنسيق -->
+  <!-- link the stylesheet -->
 </head>
 
 <body>
 
   <!-- ========================= -->
-  <!-- خلفية “تقنية ناعمة”  -->
+  <!-- soft "tech" background glow -->
   <!-- ========================= -->
   <div class="bg-glow g1" aria-hidden="true"></div>
   <div class="bg-glow g2" aria-hidden="true"></div>
 
   <!-- ========================= -->
-  <!-- الهيدر: شريط التنقل -->
+  <!-- header: nav bar -->
   <!-- ========================= -->
   <header class="topbar">
     <div class="container nav-wrap">
 
-      <!-- الشعار في الهيدر (HA فقط) -->
+      <!-- logo in the header, just the initials HA -->
       <a class="brand" href="#home" aria-label="Go to home">
         <span class="brand-badge">HA</span>
       </a>
 
-      <!-- زر القائمة للجوال -->
+      <!-- mobile menu button -->
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
 
-      <!-- روابط الأقسام -->
+      <!-- section links -->
       <nav class="nav" id="navMenu">
         <a href="#home">Home</a>
         <a href="#summary">Summary</a>
@@ -51,51 +51,51 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <!-- زر عربي (أضفته عشان يفتح النسخة العربية مباشرة بدون ترجمة تلقائية) -->
+      <!-- Arabic button, added so it opens the Arabic version directly instead of relying on auto-translate -->
       <a class="btn outline" href="index-ar.html" aria-label="Switch to Arabic">العربية</a>
 
     </div>
   </header>
 
   <!-- ========================= -->
-  <!-- Hero: واجهة فخمة + ناعمة -->
+  <!-- Hero: the fancy, soft-looking intro section -->
   <!-- ========================= -->
   <main id="home" class="hero">
     <div class="container hero-layout">
 
-      <!-- بطاقة الهيرو الرئيسية -->
+      <!-- main hero card -->
       <section class="hero-card-main">
 
-        <!-- عنوان صغير يعطي إحساس تقني -->
+        <!-- small tagline, gives it a techy feel -->
         <p class="codehint">// HELLO, THIS IS MY TECH SPACE</p>
 
         <h1 class="hero-title">Hour Alhejress</h1>
 
-        <!-- الوظيفة الأساسية -->
+        <!-- main role/title -->
         <p class="hero-role">Computer Science Student</p>
 
-        <!--  الجملة اللي  تحت الاسم ) -->
+        <!-- the line under my name -->
         <p class="hero-one-liner">
            interested in problem-solving and clean software design.
         </p>
 
         <p class="hero-desc">
-          Seeking a Summer Internship / Training opportunity to gain hands-on industry experience.
+          Seeking opportunity to gain hands-on industry experience.
         </p>
 
-        <!-- أزرار -->
+        <!-- buttons -->
         <div class="hero-actions">
           <a class="btn primary" href="#projects">
-            <!-- أيقونة مشروع (SVG) -->
+            <!-- project icon (SVG) -->
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M10 4H4v16h16V8h-8V4zM10 8h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             View Projects
           </a>
 
-          <!--  زر View CV في الهيرو  -->
+          <!-- View CV button in the hero -->
           <a class="btn outline" href="Hour_AlhejressCV.pdf" target="_blank" rel="noopener">
-            <!-- أيقونة PDF (SVG) -->
+            <!-- PDF icon (SVG) -->
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               <path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
@@ -103,9 +103,9 @@
             View CV
           </a>
 
-          <!-- زر تحميل نسخة من الـCV كخيار إضافي  -->
+          <!-- extra button to download a copy of the CV -->
           <a class="btn soft" href="Hour_AlhejressCV.pdf" download>
-            <!-- أيقونة Download (SVG) -->
+            <!-- download icon (SVG) -->
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               <path d="M8 11l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -114,11 +114,11 @@
             Download CV
           </a>
 
-          <!-- زر يفتح الإيميل مباشرة مثل GitHub -->
+          <!-- button that opens email directly, same idea as the GitHub one -->
           <a class="btn soft"
              href="mailto:houralhejress@gmail.com?subject=Message%20from%20your%20Portfolio&body=Hello%20Hour,%0D%0A%0D%0A"
              target="_blank" rel="noopener">
-            <!--  أيقونة Email (SVG) -->
+            <!-- email icon (SVG) -->
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
@@ -127,7 +127,7 @@
           </a>
         </div>
 
-        <!-- شرائح مهارات “ناعمة” -->
+        <!-- soft little skill chips -->
         <div class="chips">
           <span class="chip">Java • Python • C++</span>
           <span class="chip">SQL • SQLite</span>
@@ -137,17 +137,17 @@
 
       </section>
 
-      <!-- العمود الجانبي -->
+      <!-- side column -->
       <aside class="hero-side">
 
-        <!-- معلومات سريعة -->
+        <!-- quick info -->
         <div class="card">
           <p class="codehint">// Quick Info</p>
 
           <div class="kv">
             <span class="key">Email</span>
             <span class="value">
-              <!--  أيقونة Email جنب الرابط -->
+              <!-- email icon next to the link -->
               <a class="link"
                  href="mailto:houralhejress@gmail.com?subject=Message%20from%20your%20Portfolio&body=Hello%20Hour,%0D%0A%0D%0A"
                  target="_blank" rel="noopener">
@@ -170,7 +170,7 @@
           <div class="kv">
             <span class="key">GitHub</span>
             <span class="value">
-              <!--  أيقونة GitHub جنب الرابط (SVG بسيطة) -->
+              <!-- GitHub icon next to the link (simple SVG) -->
               <a class="link" href="https://github.com/Hour-A11" target="_blank" rel="noopener">
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M12 2C6.48 2 2 6.6 2 12.28c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.48v-1.7c-2.78.62-3.36-1.1-3.36-1.1-.46-1.2-1.12-1.52-1.12-1.52-.92-.65.07-.64.07-.64 1.02.07 1.56 1.08 1.56 1.08.9 1.6 2.37 1.14 2.95.87.09-.67.35-1.14.64-1.4-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.06 1.03-2.78-.1-.26-.45-1.33.1-2.76 0 0 .84-.27 2.75 1.06A9.2 9.2 0 0 1 12 6.9c.85 0 1.7.12 2.5.35 1.9-1.33 2.75-1.06 2.75-1.06.55 1.43.2 2.5.1 2.76.64.72 1.03 1.65 1.03 2.78 0 3.97-2.35 4.85-4.58 5.1.36.33.69.98.69 1.98v2.94c0 .26.18.58.69.48A10.3 10.3 0 0 0 22 12.28C22 6.6 17.52 2 12 2z"
@@ -192,7 +192,7 @@
           </div>
         </div>
 
-        <!-- كارد صغير “ستايل” -->
+        <!-- small styled card -->
         <div class="card accent-card">
           <p class="codehint">// CURRENT FOCUS</p>
           <h3>Learning & Building</h3>
@@ -203,7 +203,7 @@
           <a class="btn primary"
              href="https://github.com/Hour-A11"
              target="_blank" rel="noopener">
-            <!--  أيقونة GitHub داخل الزر -->
+            <!-- GitHub icon inside the button -->
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 2C6.48 2 2 6.6 2 12.28c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.48v-1.7c-2.78.62-3.36-1.1-3.36-1.1-.46-1.2-1.12-1.52-1.12-1.52-.92-.65.07-.64.07-.64 1.02.07 1.56 1.08 1.56 1.08.9 1.6 2.37 1.14 2.95.87.09-.67.35-1.14.64-1.4-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.06 1.03-2.78-.1-.26-.45-1.33.1-2.76 0 0 .84-.27 2.75 1.06A9.2 9.2 0 0 1 12 6.9c.85 0 1.7.12 2.5.35 1.9-1.33 2.75-1.06 2.75-1.06.55 1.43.2 2.5.1 2.76.64.72 1.03 1.65 1.03 2.78 0 3.97-2.35 4.85-4.58 5.1.36.33.69.98.69 1.98v2.94c0 .26.18.58.69.48A10.3 10.3 0 0 0 22 12.28C22 6.6 17.52 2 12 2z"
                     fill="currentColor"/>
@@ -268,6 +268,8 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
             <span class="chip">Java</span>
             <span class="chip">Python</span>
             <span class="chip">C++</span>
+            <span class="chip">Dart</span>
+
           </div>
 
           <p class="muted-title">Databases</p>
@@ -315,6 +317,12 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
             <span class="chip">CSS</span>
             <span class="chip">JavaScript</span>
           </div>
+
+          <p class="muted-title">Mobile Development</p>
+          <div class="chips">
+            <span class="chip">Flutter</span>
+          </div>
+
         </div>
 
       </div>
@@ -335,7 +343,9 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
         <a class="card" href="https://github.com/Hour-A11/Hospital-Management-System" target="_blank" rel="noopener noreferrer"><h3>Hospital Management System</h3></a>
         <a class="card" href="https://github.com/Hour-A11/Project-Saudi-Green-" target="_blank" rel="noopener noreferrer"><h3>Saudi Green Project </h3></a>
         <a class="card" href="https://github.com/Hour-A11/To-Do-List-Application" target="_blank" rel="noopener noreferrer"><h3>To-Do List (Linked List)</h3></a>
-        <a class="card" href="https://hour-a11.github.io/linguatrack/" target="_blank" rel="noopener noreferrer"><h3>Language learning tracker </h3></a>
+        <a class="card" href="https://hour-a11.github.io/linguatrack/" target="_blank" rel="noopener noreferrer"><h3>Language learning tracker</h3></a>
+        <a class="card" href="https://github.com/Hour-A11/Flutter-shopping-app" target="_blank" rel="noopener noreferrer"><h3>shopping-app</h3></a>
+
 
       </div>
     </div>
@@ -371,7 +381,7 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
         </p>
 
         <div class="contact-actions">
-          <!-- View هو الأساسي -->
+          <!-- View is the main action -->
           <a class="btn primary" href="Hour_AlhejressCV.pdf" target="_blank" rel="noopener">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
@@ -380,7 +390,7 @@ Experienced in academic projects using Java, Python, C++, SQL, and basic machine
             View CV
           </a>
 
-          <!-- Download إضافي -->
+          <!-- Download, just an extra option -->
           <a class="btn outline" href="Hour_AlhejressCV.pdf" download>
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
