@@ -492,3 +492,37 @@ html[lang="ar"] .nav{
   color: var(--muted);
 }
 
+/* =========================
+   project cards
+   the whole card is a link, so keep the text clean and clear
+   ========================= */
+.cards a.card{
+  display:block;
+  color: var(--text);
+  text-decoration:none;
+  transition: transform .15s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.cards a.card h3{
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.cards a.card p{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* hover effect so it feels clickable */
+.cards a.card:hover{
+  transform: translateY(-3px);
+  border-color: rgba(88,230,255,.35);
+  box-shadow: var(--shadow);
+}
+
+.cards a.card:hover h3{
+  color: var(--accent2);
+}
