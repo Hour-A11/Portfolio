@@ -448,3 +448,47 @@ html[lang="ar"] .nav{
   margin-bottom: 10px;
 }
 
+/* =========================
+   experience section
+   bullet list, certificate link and app screenshots
+   ========================= */
+.exp-list{
+  margin: 12px 0;
+  padding-inline-start: 20px;
+  list-style: disc;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.exp-list li{ margin-bottom: 6px; }
+
+/* screenshots row */
+.shots{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  align-items:flex-start;
+  margin-top:16px;
+}
+
+.shots figure{
+  margin:0;
+  flex: 1 1 140px;
+  max-width: 220px;
+}
+
+.shots img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:14px;
+  border:1px solid var(--line);
+}
+
+.shots figcaption{
+  margin-top:8px;
+  font-size:13px;
+  line-height:1.5;
+  color: var(--muted);
+}
+
